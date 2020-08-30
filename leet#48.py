@@ -1,13 +1,7 @@
-class Solution:
-    def rotate(self, matrix: List[List[int]]) -> None:
-        """
-        Do not return anything, modify matrix in-place instead.
-        """
-        matrix.reverse()
-        for i in range(len(matrix)):
-            for j in range(i):
-                temp=matrix[j][i]
-                matrix[j][i]=matrix[i][j]
-                matrix[i][j]=temp
-                
+matrix.reverse()
+import numpy as np
+        
+b=np.array(matrix)
+sha=b.transpose()
+l=sha.tolist()
         
